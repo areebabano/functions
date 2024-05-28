@@ -76,13 +76,93 @@
 // Optional Parameters 
 
 
-function fullName(firstName: string , lastName: string , age?: number): string|number{
-    return firstName + " " + lastName + " " + age;
+// function fullName(firstName: string , lastName: string , age?: number): string|number{
+//     return firstName + " " + lastName + " " + age;
+// }
+
+// let person2Name: string|number = fullName("Javeriya","Nigar",22)
+// console.log(person2Name);
+
+
+// Object with function 
+
+type friendType = {
+    name: string,
+    age: Number,
+    isStudent: boolean
 }
 
+let friend1: friendType = {
+    name: "Areeba",
+    age: 22,
+    isStudent: true
+}
 
-let person2Name: string|number = fullName("Javeriya","Nigar",22)
-console.log(person2Name);
+let friend2: friendType = {
+    name: "Rubab",
+    age: 21,
+    isStudent: false
+}
+
+// let friend3: friendType = {
+//     name: "Fabiha",
+//     age: 17,
+//     isStudent: true
+// }
+
+// let friend4: friendType = {
+//     name: "Nigar",
+//     age: 15,
+//     isStudent: true
+// }
+
+// let friend5: friendType = {
+//     name: "Javeriya",
+//     age: 20,
+//     isStudent: true
+// }
+
+function isEqual(friend1: friendType , friend2: friendType): boolean{
+    return friend1.name === friend2.name ||// logical OR operator
+    friend1.age === friend2.age ||
+    friend1.isStudent === friend2.isStudent
+} 
+
+let equalityResult: boolean = isEqual(friend1 , friend2)
+console.log(equalityResult);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
